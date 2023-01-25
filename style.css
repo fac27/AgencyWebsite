@@ -1,4 +1,14 @@
 /* Layout Primitives */
+:root {
+  --h-f-bg-colour: black;
+  --h-f-text-colour: white;
+  --main-bg-colour: white;
+  --main-text-colour: black;
+  --accent-colour: palevioletred;
+  --contrast-text-colour: black;
+}
+
+
 .text-center {
   text-align: center;
   padding: 2rem;
@@ -165,30 +175,30 @@
 }
 
 .black-background {
-  background-color: black;
+  background-color: var(--h-f-bg-colour);
 }
 
 .white-background {
-  background-color: white;
+  background-color: var(--main-bg-colour);
 }
 
 .on-black-background {
-  color: white;
+  color: var(--h-f-text-colour);
   text-decoration: none;
 }
 
 .on-white-background {
-  color: black;
+  color: var(--main-text-colour);
   text-decoration: none;
 }
 
 .contrast-text {
-  color: black;
+  color: var(--contrast-text-colour);
 }
 
 @keyframes link-hover {
-  from {color: white;}
-  to {color: palevioletred;}
+  from {color: var(--h-f-text-colour);}
+  to {color: var(--accent-colour);}
 }
 
 .link:hover {
@@ -197,7 +207,7 @@
 }
 
 .current {
-  color: palevioletred;
+  color: var(--accent-colour);
 }
 
 .landing-title {
@@ -254,8 +264,8 @@
 
 .button {
   max-width: 20rem;
-  border: solid 0.1rem black;
-  background-color: white;
+  border: solid 0.1rem var(--main-text-colour);
+  background-color: var(--main-bg-colour);
 }
 
 .profile {
