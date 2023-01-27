@@ -7,6 +7,7 @@
   --main-text-colour: black;
   --accent-colour: palevioletred;
   --contrast-text-colour: black;
+  --contrast-bg-colour: rgba(255, 241, 247, 0.66);
 }
 
 .black-background {
@@ -29,6 +30,7 @@
 
 .contrast-text {
   color: var(--contrast-text-colour);
+  background-color: var(--contrast-bg-colour);
 }
 
 @keyframes link-hover {
@@ -69,7 +71,7 @@
 .flex-down {
   display: flex;
   flex-direction: column;
-  margin-top: 2rem;
+  margin-top: 1rem;
 }
 
 .justify-center {
@@ -137,12 +139,18 @@
 .landing-title {
   font-size: 5vmax;
   margin-left: 3rem;
+  margin-right: auto;
+  padding: 0.66rem;
+ 
   max-width: 80%;
 }
 
 .landing-subtitle {
   font-size: 3vmax;
   margin-left: 3rem;
+  margin-right: auto;
+  padding: 0.66rem;
+ 
   max-width: 80%;
 }
 
