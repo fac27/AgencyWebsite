@@ -91,6 +91,10 @@
   justify-content: space-around;
 }
 
+.align-self-center {
+  align-self: center;
+}
+
 .grid {
   display: grid;
   grid-template-columns: repeat(2, 1fr);
@@ -114,7 +118,7 @@
 }
 
 .smaller-font {
-  font-size: 1vmax;
+  font-size: 1.1vmax;
   font-weight: normal;
 }
 
@@ -263,6 +267,13 @@
 } 
 
 /* Specific Elements */
+
+.social-logo {
+  height: 1.8rem;
+  -webkit-filter: invert(100%); /* safari 6.0 - 9.0 */
+  filter: invert(100%);
+  margin-bottom: 0;
+}
 
 .background-video {
   position: fixed;
