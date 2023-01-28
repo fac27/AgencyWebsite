@@ -67,9 +67,7 @@ Broadly speaking, Muhammad has been working on the HTML and Javascript, focusing
 
 - Apply CSS to the contact us page
 - Accessibility checks (issue with contrast on the video backgrounds?)
-- Media queries (currently mostly working for mobile and PC but tablet not accounted for + mobile could still be polished!)
-- Javascript functionality added e.g. to logo for homescreen
-- Reformat code (especially CSS!) to ensure no duplication and that it is easy to read and logically organised
+- Media queries (currently mostly working for mobile and PC but tablet not accounted for + mobile could still be polished)
 
 ## Links for Reference
 
