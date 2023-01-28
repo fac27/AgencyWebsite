@@ -333,12 +333,12 @@ position: relative;
 
 
 .logo {
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  height: 100px;
+  position: absolute;
+  height: 100%;
   width: auto;
-  
+  max-width: 100%;
+  top: 0;
+  left: 0;
 }
 
 /* Contact form */
