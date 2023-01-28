@@ -308,8 +308,13 @@
   border-radius: 9vmax;
 }
 
-.logo{
+
+.logo {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  height: 100px;
+  width: auto;
   
-  width: 50px;
-  height: 50px;  
 }
+
