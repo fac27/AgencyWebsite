@@ -383,11 +383,6 @@ position: relative;
   resize: none;
 }
 
-.form input,
-.span-2 textarea {
-  font: var(--fw-bold) 1rem/1.3 "Inter", sans-serif;
-}
-
 .form .subtitle {
   margin-bottom: 0;
 }
@@ -404,44 +399,38 @@ position: relative;
 
 .asterisk::after {
   content: "*";
-  color: palevioletred;
+  color: var(--accent-colour);
 }
 
-.form input {
+.input {
   border: 1px solid var(--color-secondary);
   padding: 0.438rem 0.938rem;
-  width: 100%;
+  width: 90%;
   border-radius: 0.25rem;
 }
 
-.form input:focus,
-.form input:focus-visible,
-.form textarea:focus,
-.form textarea:focus-visible {
-  outline: palevioletred solid 2px;
-  outline-offset: 4px;
+.input:focus,
+.input:focus-visible,
+.textarea:focus,
+.textarea:focus-visible {
+  outline: var(--accent-colour) solid 2px;
+  outline-offset: 0;
 }
 
-.submit-btn:hover {
-  background: palevioletred;
-  
+.btn:hover {
+  background: var(--accent-colour);
 }
 
-.submit-btn {
-  font-size: 1.125rem;
-  justify-self: start;
-  background: none;
-  padding: 0.75rem 1.25rem 0.625rem;
-  margin-top: 0;
+.btn {
+  background: var(--main-bg-colour);
   cursor: pointer;
-  color: black;
-  width: aut;
+  color: var(--main-text-colour);
   border-radius: 0.25rem;
-  display: flex;
-  align-items: center;
-  text-transform: capitalize;
+  text-align: center;
+  width: fit-content;
+  padding: 0.5rem 1rem 0.5rem 1rem;
+  border: solid 0.1rem var(--contrast-text-colour)
 }
-
 
 /* Mobile devices (portrait and landscape) */
 @media only screen and (min-width: 320px) and (max-width: 767px) {
@@ -452,11 +441,6 @@ position: relative;
 
   .span-2 {
     grid-column: initial;
-  }
-
-  .form input,
-  .form textarea {
-    font-size: 0.9rem;
   }
 }
 
