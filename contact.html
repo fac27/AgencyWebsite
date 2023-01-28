@@ -5,9 +5,9 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Contact</title>
-    <link rel="stylesheet" href="contact.css" />
+    <link rel="stylesheet" href="style.css" />
 </head>
-<body>
+<body class="width-full height-full">
   <header class="sticky row black-background padded-from-edge">
     <a href="index.html"><img src="/Logo.png" alt="logo" class="logo"></a> 
     <nav class="center">
@@ -20,8 +20,8 @@
   </header>
   <section class="section contact-bg" id="contact">
     <div class="contact container">
-      <h2>Contact</h2>
-      <form class="form">
+      <h2 class="text large-font on-white-background">Contact</h2>
+      <form class="form text">
         <div>
           <label class="asterisk" for="name">Name</label>
           <input type="text" id="name" name="name" aria-invalid="false" aria-required="true" required>
@@ -54,5 +54,15 @@
       </form>
     </div>
   </section> 
+  <footer class="row justify-space-between padded-from-edge black-background stuck-to-bottom relative width-full">
+    <p class="text on-black-background smaller-font align-self-center">
+      © SM Recruitment 2023
+    </p>
+    <ul class="row center align-self-center">
+      <li><a href="linkedin.com"><img src="/Assets/Logos/linkedin.svg" class="social-logo"></a></li>
+      <li><a href="twitter.com"><img src="/Assets/Logos/twitter.svg" class="social-logo"></a></li>
+      <li><a href="instagram.com"><img src="/Assets/Logos/instagram.svg" class="social-logo"></a></li>
+    </ul>
+  </footer>   
 </body>
 </html>
