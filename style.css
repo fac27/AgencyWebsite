@@ -505,6 +505,12 @@ ul {
   border: solid 0.1rem var(--contrast-text-colour);
 }
 
+
+.btn:focus {
+  outline: var(--accent-colour) solid 2px;
+  outline-offset: 0;
+}
+
 .btn:hover {
   background: var(--accent-colour);
 }
