@@ -1,3 +1,9 @@
+/* Universal */
+
+body, html {
+  overflow-x: hidden;
+}
+
 /* Colour */
 
 :root {
@@ -58,9 +64,9 @@
 
 .row {
   display: flex;
-  gap: 1rem;
+  gap: 0.5rem;
   max-width: 100vw;
-}
+  }
 
 @media (min-width: 900px) {
   .row {
@@ -105,19 +111,33 @@
 
 .grid {
   display: grid;
-  grid-template-columns: repeat(2, 1fr);
+  grid-template-columns: repeat(1, 1fr);
   gap: 10px;
   grid-auto-rows: minmax(100px, auto);
   margin-right: -1rem;
 }
 
 .grid-one {
-  grid-column: 1;
+  grid-row: 1;
 }
 
-.grid-two {
-  grid-column: 2;
+@media (min-width: 1000px) {
+  .grid {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 10px;
+    grid-auto-rows: minmax(100px, auto);
+    margin-right: -1rem;
+  }
+  .grid-one {
+    grid-column: 1;
+  }
+
+  .grid-two {
+    grid-column: 2;
+  }
 }
+
 
 /* Text / fonts */
 
@@ -126,26 +146,53 @@
 }
 
 .smaller-font {
-  font-size: 1.1vmax;
+  font-size: 1.5vmax;
   font-weight: normal;
 }
 
 .medium-font {
-  font-size: 1.7vmax;
+  font-size: 2.9vmax;
   font-weight: normal;
 }
 
+@media (min-width: 1000px) {
+  .medium-font {
+    font-size: 1.7vmax;
+    font-weight: normal;
+  }
+}
+
 .large-font {
-  font-size: 3vmax;
+  font-size: 5vmax;
   font-weight: bold;
   text-transform: uppercase;
   text-decoration: underline;
   text-decoration-color: var(--accent-colour);
 }
 
+@media (min-width: 1000px) {
+  .large-font {
+    font-size: 3vmax;
+  }
+}
+
 .bold-font {
-  font-size: 1.5vmax;
+  font-size: 1.6vmax;
   font-weight: bold;
+}
+
+.btn-font {
+  font-size: 2.9vmax;
+  font-weight: bold;
+}
+
+@media (min-width: 1000px) {
+  .bold-font {
+    font-size: 1.3vmax;
+  }
+  .btn-font {
+    font-size: 1.7vmax;
+  }
 }
 
 .landing-title {
@@ -153,8 +200,7 @@
   margin-left: 3rem;
   margin-right: auto;
   padding: 0.66rem;
- 
-  max-width: 80%;
+  max-width: 70%;
 }
 
 .landing-subtitle {
@@ -162,11 +208,10 @@
   margin-left: 3rem;
   margin-right: auto;
   padding: 0.66rem;
- 
-  max-width: 80%;
+  max-width: 70%;
 }
 
-@media (min-width: 900px) {
+@media (min-width: 1000px) {
   .landing-title {
     font-size: 7vmax;
     margin-left: 18rem;
@@ -441,6 +486,12 @@ position: relative;
 
   .span-2 {
     grid-column: initial;
+  }
+}
+
+@media (max-width: 500px) {
+  ul {
+    padding-inline-start: 0;
   }
 }
 
