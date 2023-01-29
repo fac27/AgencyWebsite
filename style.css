@@ -392,7 +392,11 @@ ul {
 }
 
 .profile {
-  max-width: 13.5rem;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+  max-width: 14rem;
 }
 
 .profile-img {
@@ -400,8 +404,15 @@ ul {
   height: 18vmax;
   object-fit: cover;
   border-radius: 9vmax;
+  margin-bottom: 10px;
 }
 
+.text-1 {
+  text-align: center;
+  font-family:'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+  justify-content: center;
+  
+}
 
 .logo {
   position: absolute;
