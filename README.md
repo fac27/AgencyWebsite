@@ -65,9 +65,10 @@ Broadly speaking, Muhammad has been working on the HTML and Javascript, focusing
 
 ## Next steps
 
-- Apply CSS to the contact us page
-- Accessibility checks (issue with contrast on the video backgrounds?)
-- Media queries (currently mostly working for mobile and PC but tablet not accounted for + mobile could still be polished)
+- Burger menu for mobile site
+- Consistent approach to CSS
+- Social links further apart on mobile
+- LinkedIn links added
 
 ## Links for Reference
 
