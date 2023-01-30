@@ -593,6 +593,62 @@ and (orientation : portrait) {
   }
 }
 
+.cookie-popup {
+  background-color: rgba(245, 245, 245, 0.9);
+  border-radius: 10px;
+  color: #333;
+  display: none;
+  padding: 20px;
+  position: fixed;
+  bottom: 20px;
+  left: 20px;
+  right: 20px;
+  text-align: center;
+  box-shadow: 0px 0px 20px 0px rgba(0, 0, 0, 0.2);
+  z-index: 999;
+  max-width: 500px;
+  margin: 0 auto;
+  font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+}
+
+.cookie-popup p {
+  margin-bottom: 20px;
+  font-size: 16px;
+}
+
+.cookie-popup a {
+  color: #3b3b3b;
+  text-decoration: underline;
+}
+
+.cookie-popup-actions {
+  margin-top: 20px;
+}
+
+button {
+  background-color: #3b3b3b;
+  border: none;
+  border-radius: 10px;
+  color: black
+  cursor: pointer;
+  padding: 10px 20px;
+  font-size: 16px;
+  box-shadow: 0px 0px 20px 0px rgba(0, 0, 0, 0.2);
+  transition: all 0.2s ease-in-out;
+  max-width: 20rem;
+  border: solid 0.1rem var(--main-text-colour);
+  background-color: var(--main-bg-colour);
+}
+
+button:hover {
+  transform: translateY(-2px);
+  box-shadow: 0px 4px 20px 0px rgba(0, 0, 0, 0.2);
+  background: var(--accent-colour);
+}
+
+
+
+
 /* Desktop*/
 @media only screen and (min-width: 992px) {
   .form {
