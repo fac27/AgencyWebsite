@@ -55,7 +55,7 @@ Our first step was for Muhammad to create an HTML skeleton for the pages while S
 
 <img src="Assets/Agency Website wireframe (3).jpg">
 
-We also used these initial stages as an opportunity to practise creating issues, branches and pull requests.
+We also used these initial stages as an opportunity to practice creating issues, branches and pull requests.
 
 ## Stage 2
 
