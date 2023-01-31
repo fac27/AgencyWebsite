@@ -528,7 +528,7 @@ ul {
 
 
 /* Mobile devices (portrait and landscape) */
-@media only screen and (min-width: 250px) and (max-width: 767px) {
+@media only screen and (max-width: 767px) {
   .form {
     grid-template-columns: 1fr;
     gap: 20px;
