@@ -1,69 +1,165 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, minimum-scale=1.0">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, minimum-scale=1.0" />
     <title>Contact Us</title>
     <link rel="stylesheet" href="style.css" />
-    <link rel="shortcut icon" href="/Title-Logo.jpg" type="image/x-icon">
-</head>
-<body class="width-full height-full">
-  <header class="sticky row black-background padded-from-edge">
-    <a href="index.html"><img src="Logo.png" alt="logo" class="logo"></a> 
-    <nav class="center">
-      <ul class="row">  
-        <li><a href="about.html" class="text bold-font link on-black-background">About Us</a></li>
-        <li><a href="meetteam.html" class="text  bold-font link on-black-background">Meet Our Team</a></li>
-        <li><a href="contact.html" class="text  bold-font link on-black-background">Contact Us</a></li>
+    <link rel="shortcut icon" href="/Title-Logo.jpg" type="image/x-icon" />
+  </head>
+  <body class="width-full height-full">
+    <header class="sticky row black-background padded-from-edge">
+      <a href="index.html"><img src="Logo.png" alt="logo" class="logo" /></a>
+      <nav class="center">
+        <ul class="row">
+          <li>
+            <a href="about.html" class="text bold-font link on-black-background"
+              >About Us</a
+            >
+          </li>
+          <li>
+            <a
+              href="meetteam.html"
+              class="text bold-font link on-black-background"
+              >Meet Our Team</a
+            >
+          </li>
+          <li>
+            <a
+              href="contact.html"
+              class="text bold-font link on-black-background"
+              >Contact Us</a
+            >
+          </li>
+        </ul>
+      </nav>
+    </header>
+    <section class="section contact-bg" id="contact">
+      <div class="contact container">
+        <h2 class="text large-font on-white-background">
+          Ready to work together?
+        </h2>
+        <h3 class="text">Thanks for your interest in working with us. To get in touch, simply fill out the form below and our team will be in touch with you within 24 hours during business days
+        </h3>
+        <form class="form text">
+          <div>
+            <label class="asterisk" for="name">Name</label>
+            <input
+              class="input text"
+              type="text"
+              id="name"
+              name="name"
+              aria-invalid="false"
+              aria-required="true"
+              required
+            />
+          </div>
+          <div>
+            <label class="asterisk" for="email">Email</label>
+            <input
+              class="input text"
+              type="email"
+              id="email"
+              aria-invalid="false"
+              aria-required="true"
+              name="email"
+              required
+            />
+          </div>
+          <div>
+            <label class="asterisk" for="contact-number">Contact Number</label>
+            <input
+              class="input text"
+              type="tel"
+              id="contact-number"
+              aria-invalid="false"
+              aria-required="true"
+              name="contact-number"
+              required
+            />
+          </div>
+          <div>
+            <label for="location">Location</label>
+            <input
+              class="input text"
+              type="text"
+              id="location"
+              aria-invalid="false"
+              name="location"
+            />
+          </div>
+          <div>
+            <label for="company">Company Name</label>
+            <input
+              class="input text"
+              type="text"
+              id="company"
+              name="company"
+              aria-invalid="false"
+            />
+          </div>
+          <div>
+            <label for="website">Website</label>
+            <input
+              class="input text"
+              type="url"
+              id="website"
+              name="website"
+              aria-invalid="false"
+            />
+          </div>
+          <div class="span-2">
+            <label for="message">Message</label>
+            <textarea
+              class="input text"
+              id="message"
+              cols="40"
+              rows="10"
+              aria-invalid="false"
+              name="message"
+            ></textarea>
+          </div>
+          <input
+            type="submit"
+            class="btn text btn-font"
+            aria-label="Submit form"
+          />
+        </form>
+      </div>
+    </section>
+    <footer
+      class="row justify-space-between padded-from-edge black-background stuck-to-bottom relative width-full push-down-tablet-s"
+    >
+      <p class="text on-black-background smaller-font align-self-center">
+        © SM Agency 2023
+      </p>
+      <ul class="row center align-self-center">
+        <li>
+          <a href="linkedin.com"
+            ><img
+              src="Assets/Logos/linkedin.svg"
+              class="social-logo"
+              alt="LinkedIn logo"
+          /></a>
+        </li>
+        <li>
+          <a href="twitter.com"
+            ><img
+              src="Assets/Logos/twitter.svg"
+              class="social-logo"
+              alt="Twitter logo"
+          /></a>
+        </li>
+        <li>
+          <a href="instagram.com"
+            ><img
+              src="Assets/Logos/instagram.svg"
+              class="social-logo"
+              alt="Instagram logo"
+          /></a>
+        </li>
       </ul>
-    </nav>
-  </header>
-  <section class="section contact-bg" id="contact">
-    <div class="contact container">
-      <h2 class="text large-font on-white-background">Contact</h2>
-      <form class="form text">
-        <div>
-          <label class="asterisk" for="name">Name</label>
-          <input class ="input text" type="text" id="name" name="name" aria-invalid="false" aria-required="true" required>
-        </div>
-        <div>
-          <label class="asterisk" for="email">Email</label>
-          <input class ="input text" type="email" id="email" aria-invalid="false" aria-required="true" name="email" required>
-        </div>
-        <div>
-          <label class="asterisk" for="contact-number">Contact Number</label>
-          <input class ="input text" type="tel" id="contact-number" aria-invalid="false" aria-required="true" name="contact-number" required>
-        </div>
-        <div>
-          <label for="location">Location</label>
-          <input class ="input text" type="text" id="location" aria-invalid="false" name="location">
-        </div>
-        <div>
-          <label for="company">Company Name</label>
-          <input class ="input text" type="text" id="company" name="company" aria-invalid="false">
-        </div>
-        <div>
-          <label for="website">Website</label>
-          <input class ="input text" type="url" id="website" name="website" aria-invalid="false">
-        </div>
-        <div class="span-2">
-          <label for="message">Message</label>
-          <textarea class="input text" id="message" cols="40" rows="10" aria-invalid="false" name="message"></textarea>
-        </div>
-        <input type="submit" class="btn text btn-font" aria-label="Submit form">
-      </form>
-    </div>
-  </section> 
-  <footer class="row justify-space-between padded-from-edge black-background stuck-to-bottom relative width-full push-down-tablet-s">
-    <p class="text on-black-background smaller-font align-self-center">
-      © SM Recruitment 2023
-    </p>
-    <ul class="row center align-self-center">
-      <li><a href="linkedin.com"><img src="Assets/Logos/linkedin.svg" class="social-logo" alt="LinkedIn logo"></a></li>
-      <li><a href="twitter.com"><img src="Assets/Logos/twitter.svg" class="social-logo" alt="Twitter logo"></a></li>
-      <li><a href="instagram.com"><img src="Assets/Logos/instagram.svg" class="social-logo" alt="Instagram logo"></a></li>
-    </ul>
-  </footer>   
-</body>
+    </footer>
+  </body>
 </html>
